@@ -1,0 +1,6 @@
+name: MaSuitePunishBridge
+version: ${project.version}
+main: fi.matiaspaavilainen.masuitepunishbridge.MaSuitePunishBridge
+api-version: 1.13
+authors: [Masa]
+description: Punishment system
