@@ -8,10 +8,20 @@ public final class MaSuitePunishBridge extends JavaPlugin {
     public void onEnable() {
         // Plugin startup logic
 
+        registerCommands();
+        registerListeners();
     }
 
     @Override
     public void onDisable() {
         // Plugin shutdown logic
+    }
+
+    private void registerCommands(){
+
+    }
+
+    private void registerListeners(){
+
     }
 }

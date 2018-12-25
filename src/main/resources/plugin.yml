@@ -4,3 +4,28 @@ main: fi.matiaspaavilainen.masuitepunishbridge.MaSuitePunishBridge
 api-version: 1.13
 authors: [Masa]
 description: Punishment system
+commands:
+  ban:
+    description: Ban specific player
+    aliases: [tempban, banplayer]
+    permission: masuitepunish.ban
+  mute:
+    description: Mute specific player
+    aliases: [tempmute, muteplayer]
+    permission: masuitepunish.mute
+  kick:
+    description: Kick specific player
+    aliases: [kickplayer]
+    permission: masuitepunish.kick
+  kickall:
+    description: Kick all players
+    aliases: [kickallplayers]
+    permission: masuitepunish.kick.all
+  warn:
+    description: Warn specific player
+    aliases: [warnplayer]
+    permission: masuitepunish.warn
+  report:
+    description: Report specific player
+    aliases: [reportplayer]
+    permission: masuitepunish.report
