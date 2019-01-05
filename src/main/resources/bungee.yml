@@ -1,0 +1,6 @@
+name: MaSuitePunish
+version: ${project.version}
+main: fi.matiaspaavilainen.masuitepunish.bungee.MaSuitePunish
+authors: [Masa]
+depend: [MaSuiteCore]
+description: Punishment system

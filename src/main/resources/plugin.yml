@@ -1,8 +1,9 @@
-name: MaSuitePunishBridge
+name: MaSuitePunish
 version: ${project.version}
-main: fi.matiaspaavilainen.masuitepunishbridge.MaSuitePunishBridge
+main: fi.matiaspaavilainen.masuitepunish.bukkit.MaSuitePunish
 api-version: 1.13
 authors: [Masa]
+depend: [MaSuiteCore]
 description: Punishment system
 commands:
   ban:

@@ -1,0 +1,33 @@
+{
+  "username": "MaSuite",
+  "avatar_url": "http://matiaspaavilainen.fi/masuite/Core-MaSuite-DC.png",
+  "embeds": [{
+    "color": 3447003,
+    "author": {
+      "name": "Masapelipelaa has been banned",
+      "icon_url": "https://crafatar.com/avatars/dd359b91-f211-4f74-b67c-cdc8916e3972?size=512"
+    },
+    "fields": [
+      {
+        "name": "Punisher",
+        "value": "Masagameplay",
+        "inline": true
+      },
+      {
+        "name": "Length",
+        "value": "1 day",
+        "inline": true
+      },
+      {
+        "name": "Reason",
+        "value": "Being noob",
+        "inline": true
+      },
+      {
+        "name": "Description",
+        "value": "Cannot play Minecraft",
+        "inline": true
+      }
+    ]
+  }]
+}

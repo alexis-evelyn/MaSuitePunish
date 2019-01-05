@@ -1,4 +1,4 @@
-package fi.matiaspaavilainen.masuitepunishbridge.commands;
+package fi.matiaspaavilainen.masuitepunish.bukkit.commands;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
