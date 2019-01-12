@@ -2,10 +2,9 @@ package fi.matiaspaavilainen.masuitepunish.core;
 
 public enum PunishmentType {
     BAN(1),
-    BAN_IP(1),
-    TEMP_BAN(1),
+    BANIP(1),
+    TEMPBAN(1),
     MUTE(2),
-    TEMP_MUTE(2),
     KICK(3),
     WARN(4);
 

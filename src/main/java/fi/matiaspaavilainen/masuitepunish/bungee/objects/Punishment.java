@@ -1,19 +1,10 @@
 package fi.matiaspaavilainen.masuitepunish.bungee.objects;
 
-import com.google.gson.Gson;
 import fi.matiaspaavilainen.masuitepunish.bungee.events.PunishmentEvent;
 import fi.matiaspaavilainen.masuitepunish.core.PunishmentType;
 import net.md_5.bungee.api.ProxyServer;
-import org.apache.http.HttpHeaders;
-import org.apache.http.client.methods.CloseableHttpResponse;
-import org.apache.http.client.methods.HttpPost;
-import org.apache.http.entity.StringEntity;
-import org.apache.http.impl.client.CloseableHttpClient;
-import org.apache.http.impl.client.HttpClientBuilder;
-import org.apache.http.util.EntityUtils;
 
-import java.io.IOException;
-import java.util.*;
+import java.util.UUID;
 
 public class Punishment {
 
@@ -21,8 +12,10 @@ public class Punishment {
     private UUID punisher;
     private int reason;
     private String description;
-
     private PunishmentType punishmentType;
+
+    private long created;
+    private long ends;
 
     /**
      * An empty constructor for Punishment
@@ -39,12 +32,14 @@ public class Punishment {
      * @param description    a better description of punishment
      * @param punishmentType {@link PunishmentType} is the punishment ban, mute, kick etc.
      */
-    public Punishment(UUID player, UUID punisher, int reason, String description, PunishmentType punishmentType) {
+    public Punishment(UUID player, UUID punisher, int reason, String description, PunishmentType punishmentType, long created, long ends) {
         this.player = player;
         this.punisher = punisher;
         this.reason = reason;
         this.description = description;
         this.punishmentType = punishmentType;
+        this.created = created;
+        this.ends = ends;
     }
 
     public Punishment create() {
@@ -162,5 +157,25 @@ public class Punishment {
 
     public void setPunishmentType(PunishmentType punishmentType) {
         this.punishmentType = punishmentType;
+    }
+
+    public long getLength() {
+        return this.ends - this.created;
+    }
+
+    public long getCreated() {
+        return created;
+    }
+
+    public void setCreated(long created) {
+        this.created = created;
+    }
+
+    public long getEnds() {
+        return ends;
+    }
+
+    public void setEnds(long ends) {
+        this.ends = ends;
     }
 }

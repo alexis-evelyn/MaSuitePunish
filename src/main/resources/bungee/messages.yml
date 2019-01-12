@@ -1,0 +1,7 @@
+punishments:
+  ban: "%c%player% has been permanently banned by %punisher%. Reason: %reason%."
+  tempban: "%c%player% has been banned for %length% by %punisher%. Reason: %reason%."
+  mute: "%c%player% has been muted for %length% by %punisher%. Reason: %reason%."
+  kick: "%c%player% has been kicked by %punisher%. Reason: %reason%."
+  unban: "%c%player% has been unbanned by %punisher%. Reason: %reason%."
+  warn: "%c%player% has been warned by %punisher%. Reason: %reason%."
