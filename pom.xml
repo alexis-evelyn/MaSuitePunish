@@ -94,7 +94,7 @@
         <dependency>
             <groupId>fi.matiaspaavilainen</groupId>
             <artifactId>MaSuiteCore</artifactId>
-            <version>1.5</version>
+            <version>1.5.1</version>
             <scope>provided</scope>
         </dependency>
         <dependency>

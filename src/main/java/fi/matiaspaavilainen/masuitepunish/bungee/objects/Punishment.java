@@ -1,8 +1,6 @@
 package fi.matiaspaavilainen.masuitepunish.bungee.objects;
 
-import fi.matiaspaavilainen.masuitepunish.bungee.events.PunishmentEvent;
 import fi.matiaspaavilainen.masuitepunish.core.PunishmentType;
-import net.md_5.bungee.api.ProxyServer;
 
 import java.util.UUID;
 
@@ -42,9 +40,11 @@ public class Punishment {
         this.ends = ends;
     }
 
-    public Punishment create() {
-        ProxyServer.getInstance().getPluginManager().callEvent(new PunishmentEvent(this));
-        return this;
+    public boolean create() {
+
+        // TODO: Add saving
+
+        return true;
     }
 
     /*public void discord() {
@@ -119,62 +119,106 @@ public class Punishment {
 
     }*/
 
+    /**
+     * @return the punished player
+     */
     public UUID getPlayer() {
         return player;
     }
-
+    /**
+     * @param player uuid of the punished player
+     */
     public void setPlayer(UUID player) {
         this.player = player;
     }
 
+    /**
+     * @return the punisher
+     */
     public UUID getPunisher() {
         return punisher;
     }
 
+    /**
+     * @param punisher the punisher
+     */
     public void setPunisher(UUID punisher) {
         this.punisher = punisher;
     }
 
+    /**
+     * @return Reason code specified in config
+     */
     public int getReason() {
         return reason;
     }
 
+    /**
+     * @param reason Reason code specified in config
+     */
     public void setReason(int reason) {
         this.reason = reason;
     }
 
+    /**
+     * @return Longer description of the punishment
+     */
     public String getDescription() {
         return description;
     }
 
+    /**
+     * @param description Longer description of the punishment
+     */
     public void setDescription(String description) {
         this.description = description;
     }
 
+    /**
+     * @return {@link PunishmentType}
+     */
     public PunishmentType getPunishmentType() {
         return punishmentType;
     }
 
+    /**
+     * @param punishmentType {@link PunishmentType}
+     */
     public void setPunishmentType(PunishmentType punishmentType) {
         this.punishmentType = punishmentType;
     }
 
+    /**
+     * @return How long does the punishment take
+     */
     public long getLength() {
         return this.ends - this.created;
     }
 
+    /**
+     * @return when the punishment was created
+     */
     public long getCreated() {
         return created;
     }
 
+    /**
+     * @param created when the punishment is created
+     */
     public void setCreated(long created) {
         this.created = created;
     }
 
+    /**
+     * @return when the punishment ends
+     */
     public long getEnds() {
         return ends;
     }
 
+    /**
+     * @param ends when the punishment ends
+     */
     public void setEnds(long ends) {
         this.ends = ends;
     }

@@ -7,26 +7,26 @@ depend: [MaSuiteCore]
 description: Punishment system
 commands:
   ban:
-    description: Ban specific player
+    description: BanCommand specific player
     aliases: [tempban, banplayer]
     permission: masuitepunish.ban
   mute:
-    description: Mute specific player
+    description: MuteCommand specific player
     aliases: [tempmute, muteplayer]
     permission: masuitepunish.mute
   kick:
-    description: Kick specific player
+    description: KickCommand specific player
     aliases: [kickplayer]
     permission: masuitepunish.kick
   kickall:
-    description: Kick all players
+    description: KickCommand all players
     aliases: [kickallplayers]
     permission: masuitepunish.kick.all
   warn:
-    description: Warn specific player
+    description: WarnCommand specific player
     aliases: [warnplayer]
     permission: masuitepunish.warn
   report:
-    description: Report specific player
+    description: ReportCommand specific player
     aliases: [reportplayer]
     permission: masuitepunish.report

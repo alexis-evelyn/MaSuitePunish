@@ -19,7 +19,7 @@ public class PunishmentEvent extends Event implements Cancellable {
         this.isCancelled = false;
         BungeeConfiguration config = new BungeeConfiguration();
         this.message = config.load("punish", "messages.yml")
-                .getString("punishment." + punishment.getPunishmentType().name().toLowerCase())
+                .getString("punishments." + punishment.getPunishmentType().name().toLowerCase())
                 .replace("%player%", new MaSuitePlayer().find(punishment.getPlayer()).getUsername())
                 .replace("%punisher%", new MaSuitePlayer().find(punishment.getPunisher()).getUsername())
                 .replace("%length%", new Date().getDate(new java.util.Date(punishment.getLength() * 1000)))

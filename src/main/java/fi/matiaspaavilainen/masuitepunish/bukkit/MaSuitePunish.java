@@ -1,7 +1,7 @@
 package fi.matiaspaavilainen.masuitepunish.bukkit;
 
 import fi.matiaspaavilainen.masuitecore.bukkit.MaSuiteCore;
-import fi.matiaspaavilainen.masuitepunish.bukkit.commands.Ban;
+import fi.matiaspaavilainen.masuitepunish.bukkit.commands.BanCommand;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class MaSuitePunish extends JavaPlugin {
@@ -20,7 +20,7 @@ public final class MaSuitePunish extends JavaPlugin {
     }
 
     private void registerCommands(){
-        getCommand("ban").setExecutor(new Ban(this));
+        getCommand("ban").setExecutor(new BanCommand(this));
     }
 
     private void registerListeners(){
